@@ -9,9 +9,9 @@ Author URI: http://untame.net
 */
 
 /* Remove Admin Pages */
-/* comment out what you don't want to use */
     add_action( 'admin_menu', 'my_remove_menu_pages' );
 
+/* comment out what you don't want to use */
 function my_remove_menu_pages() {
       remove_menu_page( 'index.php' );                  //Dashboard
       remove_menu_page( 'jetpack' );                    //Jetpack*
@@ -27,9 +27,9 @@ function my_remove_menu_pages() {
     }
 
 /* Remove Dashboard Widgets */
-/* comment out what you don't want to use */
 
 // Create the function to use in the action hook
+/* comment out what you don't want to use */
 function example_remove_dashboard_widget() {
  	remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
   remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
